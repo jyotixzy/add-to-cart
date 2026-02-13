@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary    run_on_failure=None   #failure hone par koi action nahi hoga
+Library    SeleniumLibrary
+# Library    SeleniumLibrary    run_on_failure=None   --> failure hone par koi action nahi hoga
 
 *** Variables ***
 ${URL}        https://l1nq.com/fLWTg
@@ -55,7 +56,7 @@ Add Product2 To cart
 Add Product3 To Cart
     [Tags]  batch3
     # Open Browser    ${URL}    ${BROWSER}
-     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${options}    add_argument    --headless=new
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
