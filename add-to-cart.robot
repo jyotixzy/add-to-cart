@@ -11,7 +11,7 @@ Add Product1 To Cart
     [Tags]  batch1
     # Open Browser    ${URL}    ${BROWSER}
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    Call Method    ${options}    add_argument    --headless=new
+    Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Create WebDriver    Chrome    options=${options}
@@ -34,7 +34,7 @@ Add Product2 To cart
     [Tags]  batch2
     # Open Browser    ${URL}    ${BROWSER}
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    Call Method    ${options}    add_argument    --headless=new
+    Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Create WebDriver    Chrome    options=${options}
@@ -57,7 +57,7 @@ Add Product3 To Cart
     [Tags]  batch3
     # Open Browser    ${URL}    ${BROWSER}
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    Call Method    ${options}    add_argument    --headless=new
+    Call Method    ${options}    add_argument    --headless
     Call Method    ${options}    add_argument    --no-sandbox
     Call Method    ${options}    add_argument    --disable-dev-shm-usage
     Create WebDriver    Chrome    options=${options}
