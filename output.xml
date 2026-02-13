@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.10.12 on linux)" generated="2026-02-13T12:02:16.510905" rpa="false" schemaversion="5">
+<suite id="s1" name="Add-To-Cart" source="/home/jyoti/Documents/amazon_add_to_cart_test/add-to-cart.robot">
+<test id="s1-t1" name="Add Product To Cart Test" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-13T12:02:16.762462" level="INFO">Opening browser 'chrome' to base url 'https://l1nq.com/fLWTg'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-13T12:02:16.762028" elapsed="13.258416"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-13T12:02:30.021001" elapsed="0.072458"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-13T12:02:30.094175" elapsed="0.426643"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-13T12:02:30.521962" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-13T12:02:30.521399" elapsed="2.297940"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Added</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-13T12:02:32.820162" elapsed="0.069958"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-13T12:02:35.891153" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-13T12:02:32.890494" elapsed="3.000852"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-13T12:02:35.891757" elapsed="0.138845"/>
+</kw>
+<status status="PASS" start="2026-02-13T12:02:16.760579" elapsed="19.270553"/>
+</test>
+<status status="PASS" start="2026-02-13T12:02:16.513456" elapsed="19.518924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Add-To-Cart" id="s1" pass="1" fail="0" skip="0">Add-To-Cart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
